@@ -62,7 +62,6 @@ time.sleep(5)
 driver.switch_to.window(base_window)
 print(driver.title)
 
-# allow_cookies = driver.find_element(By.XPATH, value="/html/body/div[2]/main/div[2]/div/div/div[1]/div[1]/button")
 allow_cookies = driver.find_element(By.XPATH, value="/html/body/div[2]/main/div[2]/div/div/div[1]/div[1]/button/div[2]/div[2]")
 allow_cookies.click()
 
