@@ -21,19 +21,7 @@ more_options = driver.find_element(By.XPATH, value="/html/body/div[2]/main/div/d
 more_options.click()
 time.sleep(2)
 
-# except:
-#     cut = driver.find_element(By.XPATH, value="/html/body/div[2]/main/div/div[2]/button/svg/path")
-#     cut.click()
-#
-#     login = driver.find_element(By.XPATH,
-#                                 value='/html/body/div[1]/div/div[1]/div/main/div[1]/div/div/div/div/header/div/div[2]/div[2]/a')
-#     login.click()
-#     time.sleep(2)
-#
-#     more_options = driver.find_element(By.XPATH,
-#                                        value="/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div[2]/span/button")
-#     more_options.click()
-#     time.sleep(2)
+
 try:
     fb_login = driver.find_element(By.XPATH, value="/html/body/div[2]/main/div/div/div[1]/div/div/div[2]/div[2]/span/div[2]/button")
     fb_login.click()
@@ -58,10 +46,10 @@ fb_login_window = driver.window_handles[1]
 driver.switch_to.window(fb_login_window)
 time.sleep(2)
 email_input = driver.find_element(By.XPATH, value='/html/body/div/div[2]/div[1]/form/div/div[1]/div/input')
-email_input.send_keys("rajsharma22558800@gmail.com")
+email_input.send_keys(YOUR_MAIL_ID)
 time.sleep(2)
 pass_input = driver.find_element(By.XPATH, value="/html/body/div/div[2]/div[1]/form/div/div[2]/div/input")
-pass_input.send_keys("khatima2255@")
+pass_input.send_keys(YOUR_PASSWORD)
 time.sleep(2)
 login_button = driver.find_element(By.ID, value="loginbutton")
 login_button.click()
